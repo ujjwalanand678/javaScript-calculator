@@ -41,14 +41,13 @@ form .display input {
     height: 100px;
 
 }
-form input.equal {
+.buttons .equal {
     background: cornflowerblue;
    
 }
-form input.ac {
+.buttons .ac {
     color: red;
 }
-
-form input.symbol {
+ .buttons .symbol {
     color: lawngreen;
 }
