@@ -7,6 +7,14 @@ for (let i = 0; i < inputButton.length; i++) {
     // display.value = inputButton[i];
     // display.value = this.value;
 
-   
+    const btn = this.value;
+
+    if (btn == "=") {
+      display.value = eval(display.value);
+    
+      display.value = display.value.slice(0, -1);
+    } else {
+      display.value += btn;
+    }
   });
 }
