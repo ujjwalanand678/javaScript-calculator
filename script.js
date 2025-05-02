@@ -11,7 +11,10 @@ for (let i = 0; i < inputButton.length; i++) {
 
     if (btn == "=") {
       display.value = eval(display.value);
-    
+    } else if (btn == "AC") {
+      display.value = "";
+    } else if (btn == "DE") {
+      // ← delete last character
       display.value = display.value.slice(0, -1);
     } else {
       display.value += btn;
